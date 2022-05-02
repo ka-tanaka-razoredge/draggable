@@ -29,9 +29,16 @@ export default () => {
 //    a.splice(index + 1, 0, t);
     const head = a.slice(0, index + 1);
     const tail = a.slice(index + 1);
-    console.log('tail:'); console.log(tail);
-    let reply = head.concat(t);
-    reply = reply.concat(tail);
+    let reply;
+//    if (aggregate.findIndex(item => item.id === e.target.id) === 0) {
+//    if (aggregate.findIndex(item => item.id === e.target.id) < aggregate.findIndex(item => item.id === destination.id)) {
+      reply = head.concat(t);
+      reply = reply.concat(tail);
+//    } else {
+//      reply = t.concat(head);
+//      reply = reply.concat(tail);
+//    }
+    console.log(reply);
     setAggregate(reply);
 
     console.log('onDragEnd end');
